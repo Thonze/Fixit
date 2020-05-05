@@ -2,6 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const path = require('path')
 const defaultroute = require('./routes/defaultroutes')
+const nodemailer = require('nodemailer')
 
 const app = express()
 
@@ -21,6 +22,8 @@ app.set("views engine", "ejs");
 
 //Routes configuration
 app.use('/', defaultroute)
+
+
 
 app.listen
 (8000, (req,res) => {
