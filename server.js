@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer')
 // const {globalVariables} = require('./config/configuration')
 const flash = require('connect-flash');
 const session = require('express-session')
-PORT = process.env.PORT || 4008
+const PORT = process.env.PORT || 4008
 
 const app = express()
 
